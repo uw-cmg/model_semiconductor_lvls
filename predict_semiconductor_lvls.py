@@ -69,7 +69,7 @@ def make_predictions(comp_list, chargefrom_list, chargeto_list, lattice_list, ba
     df_test['charge_to'] = chargeto_list
     df_test['host lattice constant_[Ang.]'] = lattice_list
     df_test['host bandgap_[eV]'] = bandgap_list
-    df_teest['is_b_latt'] = is_b_latt_list
+    df_test['is_b_latt'] = is_b_latt_list
 
     # Get the ML predicted values
     preds, ebars, domains = get_preds_ebars_domains(df_test)
